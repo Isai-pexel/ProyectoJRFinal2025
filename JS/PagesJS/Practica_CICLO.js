@@ -106,6 +106,19 @@ function primeraMayorDeEdad(){
 
 }
 
+//caso 4
+
+function mostrarTodasLasPersonas(){
+    let resultado = document.getElementById('listaPersonas');
+
+    personas.forEach(element => {
+        if (element.nombre) {
+            resultado.innerHTML += 
+            `<li>nombre : ${element.nombre}</li>`;
+        }
+    });
+}
+
 //Crear la funcion del onclick
 // input id value
 //Cualquier etiqueta mostrar el resultado inner
