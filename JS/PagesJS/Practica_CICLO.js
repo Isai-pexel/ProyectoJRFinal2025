@@ -106,6 +106,7 @@ function personasActivas() {
     });
 }
 
+//Entregable 2 proyecto 
 
 //3-4-5
-//Entregable 2 proyecto
+//Entregable 3 proyecto
