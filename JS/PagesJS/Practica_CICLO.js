@@ -24,15 +24,15 @@ console.log(personas[1].nombre)
 //foreach
 //array quitelo y coloque su array
 //element serian las posiciones 0,1,2.....
-personas.forEach(element =>{
+personas.forEach(element => {
     console.log(element)
 
 });
 
 clientes.forEach(element => {
 
-    if (element.activo === true ){
-        console.log(element.nombre,element.activo)
+    if (element.activo === true) {
+        console.log(element.nombre, element.activo)
 
     }
 });
@@ -49,19 +49,19 @@ let buscarActivo = personas.find(x => x.activo === true);
 console.log(buscarActivo)
 
 
-function Filtrar(){
+function Filtrar() {
     let valor = document.getElementById('sensitivo').value;
     console.log(valor)
 }
 
-
-function BuscarDesdeInput(){
+//caso 1
+function BuscarDesdeInput() {
     let input1 = document.getElementById('buscarNombre').value().trim(); //Metio el valor pepe
     let resultado = document.getElementById('resultadoBusqueda');
 
     //Busca en el arreglo
     let busqueda = personas.find(x => x.nombre.toUpperCase() === input1.toUpperCase());
-     
+
     //Aqui indicamos si el resultado es verdadero o falso
     if (busqueda) {
         resultado.innerHTML = `encontrado a la persona ${busqueda.nombre}`;
@@ -75,7 +75,8 @@ function BuscarDesdeInput(){
 // input id value //No tiene
 //Cualquier etiqueta mostrar el resultado inner
 
-function primeraPersonaActiva(){
+//caso2
+function primeraPersonaActiva() {
     let resultado = document.getElementById('resultadoActivo');//inner
 
     let busqueda = personas.find(x => x.activo === true);
@@ -88,3 +89,20 @@ function primeraPersonaActiva(){
 
     }
 }
+
+//Crear la funcion del onclick
+// input id value
+//Cualquier etiqueta mostrar el resultado inner
+
+//caso 6
+function personasActivas() {
+    let resultado = document.getElementById('listaActivos');
+
+    personas.forEach(element => {
+        if (element.activo === true) {
+            resultado.innerHTML += 
+            `<li>nombre : ${element.nombre}</li>`;
+        }
+    });
+}
+
