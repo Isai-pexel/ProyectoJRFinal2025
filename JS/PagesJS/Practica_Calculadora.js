@@ -15,8 +15,12 @@ function enviarDatos() {
 
 function realizarSuma() {
     console.log("Funcionando realizarSuma")
-    let numero1 = document.getElementById('numero1').value;
+    let numero1 = document.getElementById('numero1').value; //gi
     let numero2 = document.getElementById('numero2').value;
-    console.log(numero1)
-    console.log(numero2)
+
+    //ls, lo, la
+    //ParseInt
+    let suma = parseInt(numero1) + parseInt(numero2);
+    document.getElementById('resultado').innerText = `${suma}`;
+
 }
