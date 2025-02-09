@@ -90,6 +90,22 @@ function primeraPersonaActiva() {
     }
 }
 
+//CASO 3
+
+function primeraMayorDeEdad(){
+    let resultado = document.getElementById('resultadoMayor');
+
+    let busqueda = personas.find(x => x.edad >= 18);
+
+    if (busqueda) {
+        resultado.innerHTML = `Primera persona mayor de edad es ${busqueda.nombre}`;
+    } else {
+        resultado.innerHTML = `No se a encontrado`;
+
+    }
+
+}
+
 //Crear la funcion del onclick
 // input id value
 //Cualquier etiqueta mostrar el resultado inner
