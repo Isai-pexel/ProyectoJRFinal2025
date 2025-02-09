@@ -47,3 +47,9 @@ console.log(buscarNombre)
 
 let buscarActivo = personas.find(x => x.activo === true);
 console.log(buscarActivo)
+
+
+function Filtrar(){
+    let valor = document.getElementById('sensitivo').value;
+    console.log(valor)
+}
