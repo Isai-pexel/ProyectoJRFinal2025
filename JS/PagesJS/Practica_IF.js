@@ -9,4 +9,13 @@ function verificarEdad(){
     console.log(edad)
     console.log(pais)
 
+    //IfElse
+    if (edad >= 18) {
+        alert(`No es mayor de edad`);
+        
+    } else {
+        alert(`Es mayor de edad`);
+        
+    }
+
 }
