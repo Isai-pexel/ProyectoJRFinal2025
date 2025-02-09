@@ -56,7 +56,7 @@ function Filtrar(){
 
 
 function BuscarDesdeInput(){
-    let input1 = document.getElementById('buscarNombre').value.trim(); //Metio el valor pepe
+    let input1 = document.getElementById('buscarNombre').value().trim(); //Metio el valor pepe
     let resultado = document.getElementById('resultadoBusqueda');
 
     //Busca en el arreglo
@@ -67,6 +67,24 @@ function BuscarDesdeInput(){
         resultado.innerHTML = `encontrado a la persona ${busqueda.nombre}`;
     } else {
         resultado.innerHTML = `No encontrado`;
+
+    }
+}
+
+//Crear la funcion del onclick
+// input id value //No tiene
+//Cualquier etiqueta mostrar el resultado inner
+
+function primeraPersonaActiva(){
+    let resultado = document.getElementById('resultadoActivo');//inner
+
+    let busqueda = personas.find(x => x.activo === true);
+    //Aqui indicamos si el resultado es verdadero o falso
+
+    if (busqueda) {
+        resultado.innerHTML = `Primera persona encontrada ${busqueda.nombre}`;
+    } else {
+        resultado.innerHTML = `No se a encontrado`;
 
     }
 }
