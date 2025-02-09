@@ -30,5 +30,9 @@ personas.forEach(element =>{
 });
 
 clientes.forEach(element => {
-    console.log(element.nombre,element.activo)
+
+    if (element.activo === true ){
+        console.log(element.nombre,element.activo)
+
+    }
 });
