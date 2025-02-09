@@ -119,6 +119,19 @@ function mostrarTodasLasPersonas(){
     });
 }
 
+//Caso 5
+
+function mayoresDeEdad(){
+    let resultado = document.getElementById('listaMayores');
+    personas.forEach(element => {
+        if (element.edad >= 18) {
+            resultado.innerHTML += 
+            `<li>nombre : ${element.nombre}</li>`;
+        }
+    });
+
+}
+
 //Crear la funcion del onclick
 // input id value
 //Cualquier etiqueta mostrar el resultado inner
