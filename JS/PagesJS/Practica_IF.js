@@ -19,3 +19,17 @@ function verificarEdad(){
     }
 
 }
+
+function verificarParImpar(){
+    let numero3 = document.getElementById('numero3').value;
+
+    let numeroConvertido = parseInt(numero3);
+    if (numeroConvertido % 2 === 0) {
+        alert(`El número ${numero3} es par`);
+        
+    } else {
+        alert(`El número ${numero3} es impar`);
+        
+    }
+    console.log(numero3)
+}
