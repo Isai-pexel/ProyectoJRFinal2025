@@ -11,10 +11,10 @@ function verificarEdad(){
 
     //IfElse
     if (edad >= 18) {
-        alert(`No es mayor de edad`);
+        alert(`No es mayor de edad en ${pais}`);
         
     } else {
-        alert(`Es mayor de edad`);
+        alert(`Es mayor de edad en ${pais}`);
         
     }
 
