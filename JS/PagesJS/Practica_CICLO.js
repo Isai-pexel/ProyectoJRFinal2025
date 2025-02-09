@@ -36,3 +36,14 @@ clientes.forEach(element => {
 
     }
 });
+
+//Cantidad de elementos de un array
+
+console.log(personas.length);
+
+//Filtrar por una propiedad
+let buscarNombre = personas.find(x => x.nombre === "Ana");
+console.log(buscarNombre)
+
+let buscarActivo = personas.find(x => x.activo === true);
+console.log(buscarActivo)
