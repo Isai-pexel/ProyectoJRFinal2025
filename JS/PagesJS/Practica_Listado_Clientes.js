@@ -8,8 +8,19 @@ let Datos_Locales = [
     { id: 4, name: "Ana Fernández", email: "ana.fernandez@example.com" }
 ];
 
+
+let datosFiltrados []
 let contenedor = document.getElementById('tbody');
-MostrarCampoTabla()
+
+datosFiltrados = Datos_Locales 
+
+//Aela
+document.addEventListener('DOMContentLoaded', () => {
+    MostrarCampoTabla() 
+});
+
+
+
 
 function MostrarCampoTabla(){
 
