@@ -9,12 +9,12 @@ let Datos_Locales = [
 ];
 
 
-let datosFiltrados []
+let datosFiltrados = []
 let contenedor = document.getElementById('tbody');
 
 datosFiltrados = Datos_Locales 
 
-//Aela
+//Aela Visualizar al ejecutar la pagina DOM
 document.addEventListener('DOMContentLoaded', () => {
     MostrarCampoTabla() 
 });
