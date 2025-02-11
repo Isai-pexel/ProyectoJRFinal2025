@@ -26,6 +26,7 @@ function consultarDatos (){
             // custom error
             datosFiltrados = result
             console.log(result)
+            MostrarCampoTabla()
         })
         .catch(error => { //4- catch es en caso de error
             // common error
@@ -34,10 +35,29 @@ function consultarDatos (){
         });
 }
 
+function MostrarCampoTabla(){
+
+    let html = "";
+
+    Datos_Locales.forEach(element => {
+        console.log(element)
+
+        html += `
+            <tr>
+                    <td>${element.id}</td>
+                    <td>${element.name}</td>
+                    <td>${element.email}</td>
+            </tr>
+        `
+    });
+
+    contenedor.innerHTML = html;
+}
+
 
 //Consultar api clientes
 
-document.addEventListener('DOMContentLoaded', () => { /
+document.addEventListener('DOMContentLoaded', () => { 
     consultarDatosConsola()
 });
 
