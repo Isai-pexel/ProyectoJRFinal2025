@@ -32,3 +32,24 @@ function consultarDatos (){
             return null;
         });
 }
+
+
+//Consultar api clientes
+
+document.addEventListener('DOMContentLoaded', () => {
+    consultarDatosConsola()
+});
+
+function consultarDatosConsola(){
+    fetch(Api_Usuarios)
+        
+        .then(response => response.json())
+        .then(result => {
+            // custom error
+            console.log(result)
+        })
+        .catch(error => {
+            // common error
+            return null;
+        });
+}
