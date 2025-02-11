@@ -1,5 +1,37 @@
 console.log(`Funcionando Archivo:  Practica_Listado_Clientes`);
 
+// Datos locales simulando la API
+let Datos_Locales = [
+    { id: 1, name: "Juan Pérez", email: "juan.perez@example.com" },
+    { id: 2, name: "María Gómez", email: "maria.gomez@example.com" },
+    { id: 3, name: "Carlos Rodríguez", email: "carlos.rodriguez@example.com" },
+    { id: 4, name: "Ana Fernández", email: "ana.fernandez@example.com" }
+];
+
+let contenedor = document.getElementById('tbody');
+MostrarCampoTabla()
+
+function MostrarCampoTabla(){
+
+    let html = "";
+
+    Datos_Locales.forEach(element => {
+        console.log(element)
+
+        html += `
+            <tr>
+                    <td>${element.id}</td>
+                    <td>${element.name}</td>
+                    <td>${element.email}</td>
+            </tr>
+        `
+    });
+
+    contenedor.innerHTML = html;
+}
+
+
+
 function exportToExcel() {
 
     try {
