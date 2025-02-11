@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 //Consultar datros del api mediante fetch(ajax)
-function consultarDatos (){
+function consultarDatos(){
 
     //fetchget
     fetch(Api_Usuarios) // 1-Se le indica el url de la api
@@ -30,7 +30,7 @@ function consultarDatos (){
         })
         .catch(error => { //4- catch es en caso de error
             // common error
-            alert('Error')
+            alert('Error',error)
             return null;
         });
 }
@@ -39,7 +39,7 @@ function MostrarCampoTabla(){
 
     let html = "";
 
-    Datos_Locales.forEach(element => {
+    datosFiltrados.forEach(element => {
         console.log(element)
 
         html += `
@@ -55,22 +55,22 @@ function MostrarCampoTabla(){
 }
 
 
-//Consultar api clientes
+// //Consultar api clientes
 
-document.addEventListener('DOMContentLoaded', () => { 
-    consultarDatosConsola()
-});
+// document.addEventListener('DOMContentLoaded', () => { 
+//     consultarDatosConsola()
+// });
 
-function consultarDatosConsola(){
-    fetch(Api_Usuarios)
+// function consultarDatosConsola(){
+//     fetch(Api_Usuarios)
         
-        .then(response => response.json())
-        .then(result => {
-            // custom error
-            console.log(result)
-        })
-        .catch(error => {
-            // common error
-            return null;
-        });
-}
+//         .then(response => response.json())
+//         .then(result => {
+//             // custom error
+//             console.log(result)
+//         })
+//         .catch(error => {
+//             // common error
+//             return null;
+//         });
+// }
