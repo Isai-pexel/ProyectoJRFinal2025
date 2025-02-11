@@ -17,62 +17,62 @@ export let Datos_LiNav = [
     {   Id: 2,
         Nombre: "Calculadora",
         Detalle: "Practica",      
-        Url: "/Practica_Calculadora.html",
-        Activo: true
+        Url: "./Practica_Calculadora.html",
+        Activo: false
     },
     {   Id: 3,
         Nombre: "Listado Clientes", 
         Detalle: "Practica",     
-        Url: "/Practica_Listado_Clientes.html",
+        Url: "./Practica_Listado_Clientes.html",
         Activo: true
     },
     {   Id: 4,
         Nombre: "Tarea Pokemon",   
         Detalle: "Practica",  
-        Url: "/Practica_TareaPokemon.html",
-        Activo: true
+        Url: "./Practica_TareaPokemon.html",
+        Activo: false
     },
     {   Id: 5,
         Nombre: "Tarea Netflix",    
         Detalle: "Practica", 
-        Url: "/Practica_TareaNetflix.html",
+        Url: "./Practica_TareaNetflix.html",
         Activo: false
     },
     {   Id: 7,
         Nombre: "API_TareaPokemon",    
         Detalle: "Proyecto", 
-        Url: "/API_TareaPokemon.html",
+        Url: "./API_TareaPokemon.html",
         Activo: false
     },
     {   Id: 8,
         Nombre: "API_Listado_Cliente",    
         Detalle: "Proyecto", 
-        Url: "/API_Listado_Clientes.html",
-        Activo: false
+        Url: "./API_Listado_Clientes.html",
+        Activo: true
     },
     {   Id: 9,
         Nombre: "API_VerUsuario",    
         Detalle: "Proyecto", 
-        Url: "/API_VerUsuario.html",
+        Url: "./API_VerUsuario.html",
         Activo: false
     },
     {   Id: 10,
         Nombre: "API_Contacto",    
         Detalle: "Proyecto", 
-        Url: "/API_Contacto.html",
+        Url: "./API_Contacto.html",
         Activo: false
     },
     {   Id: 11,
         Nombre: "Practica IF",    
         Detalle: "Practica ", 
-        Url: "/Practica_IF.html",
-        Activo: true
+        Url: "./Practica_IF.html",
+        Activo: false
     },
     {   Id: 12,
         Nombre: "Practica CICLO",    
         Detalle: "Practica ", 
-        Url: "/Practica_CICLO.html",
-        Activo: true
+        Url: "./Practica_CICLO.html",
+        Activo: false
     },
 ];
 
