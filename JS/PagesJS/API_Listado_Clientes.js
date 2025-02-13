@@ -10,6 +10,9 @@ let datosFiltrados = []
 let datosFiltrados2 = []
 
 let contenedor = document.getElementById('tbody');
+let contenedor2 = document.getElementById('tbody2');
+
+
 
 
 
@@ -46,6 +49,7 @@ function consultarDatos2(){
         .then(result => { //3-Resultados
             // custom error
             console.log(result.results)
+            MostrarCampoTabla2()
         })
         .catch(error => { //4- catch es en caso de error
             // common error
@@ -71,6 +75,24 @@ function MostrarCampoTabla(){
     });
 
     contenedor.innerHTML = html;
+}
+
+function MostrarCampoTabla2(){
+
+    let html = "";
+
+    datosFiltrados2.forEach(element => {
+        console.log(element)
+
+        html += `
+            <tr>
+                    <td>${element.name}</td>
+                    <td><img src="${element.image}" alt=""></td>
+            </tr>
+        `
+    });
+
+    contenedor2.innerHTML = html;
 }
 
 
