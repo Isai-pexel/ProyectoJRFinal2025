@@ -48,6 +48,7 @@ function consultarDatos2(){
         .then(response => response.json())//2-Conversion de datos , json
         .then(result => { //3-Resultados
             // custom error
+            datosFiltrados2 = result.results
             console.log(result.results)
             MostrarCampoTabla2()
         })
