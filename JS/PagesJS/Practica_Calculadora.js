@@ -24,3 +24,15 @@ function realizarSuma() {
     document.getElementById('resultado').innerText = `${suma}`;
 
 }
+
+function realizarMultiplicacion() {
+    console.log("Funcionando realizarMuliplicacion")
+    let numero1 = document.getElementById('numero3').value; //gi
+    let numero2 = document.getElementById('numero4').value;
+
+    //ls, lo, la
+    //ParseInt
+    let multi = parseInt(numero1) * parseInt(numero2);
+    document.getElementById('resultado2').innerText = `${multi}`;
+
+}
