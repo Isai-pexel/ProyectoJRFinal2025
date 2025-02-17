@@ -55,8 +55,8 @@ function Filtrar() {
 }
 
 //caso 1
-function BuscarDesdeInput() {
-    let input1 = document.getElementById('buscarNombre').value().trim(); //Metio el valor pepe
+function buscarDesdeInput() {
+    let input1 = document.getElementById('buscarNombre').value.trim(); //Metio el valor pepe
     let resultado = document.getElementById('resultadoBusqueda');
 
     //Busca en el arreglo

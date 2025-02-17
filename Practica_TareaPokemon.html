@@ -29,8 +29,8 @@
 
     <!-- Inicio: Navbar  100% -->
     <nav class="navbar navbar-expand-sm navbar-light bg-light" id="IdNav"> </nav>
-    <!-- Fin: Navbar  -->   
-    
+    <!-- Fin: Navbar  -->
+
 
 
     <!-- Inicio: Container 90% -->
@@ -45,13 +45,17 @@
         <!-- Inicio: Main  -->
         <main class="mt-5">
             <div class="form-group">
-                <input type="text" class="form-control" id="IdBusqueda" placeholder="Buscar Pokémon..." onkeyup="Buscar_Pokemon()">
+                <input type="text" class="form-control" id="IdBusqueda" placeholder="Buscar Pokémon...">
             </div>
             <button type="button" onclick="Mostrar_UnPokemon()" class="btn btn-secondary">Mostrar un pokemon</button>
 
-            <button type="submit" onclick="Mostrar_TodosPokemon()"  class="btn btn-secondary">Mostrar Todos</button>
-            <div id="pokemon"></div>
-            
+            <button type="submit" onclick="Mostrar_TodosPokemon()" class="btn btn-secondary">Mostrar Todos</button>
+   
+                <div class="row">
+                    <div id="IdPokemon" class="col-md-4"></div>
+                </div>
+
+
             <div id="IdMostrarPokemon" class="row"></div>
 
         </main>
@@ -60,21 +64,21 @@
     <!-- Fin: Container  -->
 
     <!-- Inicio: Footer  100% -->
-    <footer id="IdFooter" class="text-center mt-5">  </footer>
+    <footer id="IdFooter" class="text-center mt-5"> </footer>
     <!-- Fin: Footer  -->
 
 
 
 
 
- 
+
     <!-- Scripts General  -->
     <script type="module" src="JS/General/Nav.js"></script>
     <script type="module" src="JS/General/Footer.js"></script>
     <script type="module" src="JS/General/Header.js"></script>
-   
-   <!-- Scripts de la Pagina   -->
-    
+
+    <!-- Scripts de la Pagina   -->
+
     <script src="JS/PagesJS/Practica_TareaPokemon.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

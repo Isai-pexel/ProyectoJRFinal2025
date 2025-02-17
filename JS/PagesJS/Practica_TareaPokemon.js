@@ -58,32 +58,49 @@ const Datos_Pokemon = [
   }
 ];
 
-function mostrar_TodosPokemon() {
-  document.getElementById('pokemon').innerHTML = `
-    <div class="row">
-  
-    
-        <div id="IdPokemon0" class="col-md-4">
-        <div>
-           <div class="card">
-              <img class="card-img-top img-fluid" src="${Datos_Pokemon[0].Imagen}" alt="Imagen de posicion 0">
-              <div class="card-body">
-                  <h4 class="card-title">${Datos_Pokemon[0].Nombre}</h4>
-                  <p class="card-text">${Datos_Pokemon[0].Descripcion} </p>
-                   <button class="btn btn-primary" onclick="">Ver Detalles</button>
-            </div>
-         </div>
-      </div>
-    </div>
-        <div id="IdPokemon1" class="col-md-4"></div>
-        <div id="IdPokemon2" class="col-md-4"></div>
-        <div id="IdPokemon3" class="col-md-4"></div>
-        <div id="IdPokemon4" class="col-md-4"></div>
-        <div id="IdPokemon5" class="col-md-4"></div>
-        <div id="IdPokemon6" class="col-md-4"></div>
-        <div id="IdPokemon7" class="col-md-4"></div>
-        <div id="IdPokemon8" class="col-md-4"></div>
+function Mostrar_TodosPokemon() {
+  let resultado = document.getElementById('IdPokemon');
 
-    </div>
-  `
+  Datos_Pokemon.forEach(element => {
+    if (element) {
+      resultado.innerHTML +=
+        `<div>
+           <div class="card">
+              <img class="card-img-top img-fluid" src="${element.Imagen}" alt="Imagen de posicion 0">
+              <div class="card-body">
+                  <h4 class="card-title">${element.Nombre}</h4>
+                  <p class="card-text">${element.Descripcion} </p>
+                   <button class="btn btn-primary" onclick="">Ver Detalles</button>
+              </div>
+            </div>
+        </div>`;
+    }
+
+  });
+}
+
+
+function Mostrar_UnPokemon() {
+  let input1 = document.getElementById('IdBusqueda').value.trim(); //Metio el valor pepe
+  let resultado = document.getElementById('IdMostrarPokemon');
+
+  //Busca en el arreglo
+  let busqueda = Datos_Pokemon.find(x => x.Nombre.toUpperCase() === input1.toUpperCase());
+
+  //Aqui indicamos si el resultado es verdadero o falso
+  if (busqueda) {
+      resultado.innerHTML = `<div>
+           <div class="card">
+              <img class="card-img-top img-fluid" src="${busqueda.Imagen}" alt="Imagen de posicion 0">
+              <div class="card-body">
+                  <h4 class="card-title">${busqueda.Nombre}</h4>
+                  <p class="card-text">${busqueda.Descripcion} </p>
+                   <button class="btn btn-primary" onclick="">Ver Detalles</button>
+              </div>
+            </div>
+        </div>`;
+  } else {
+      resultado.innerHTML = `No encontrado`;
+
+  }
 }
