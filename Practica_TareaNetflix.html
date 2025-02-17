@@ -44,7 +44,97 @@
 
         <!-- Inicio: Main  -->
         <main class="mt-5">
-           
+            <div class="container my-5">
+                <h1 class="text-center text-danger">Tarea: Temática de Netflix</h1>
+                <p>El objetivo es completar las funciones y parámetros necesarios para lograr la funcionalidad descrita en cada
+                    ejercicio.</p>
+                <hr class="bg-danger">
+        
+                <!-- Ejercicio 1 -->
+                <div class="mb-4">
+                    <h2>1. Saludo de Bienvenida</h2>
+                    <p>Haz clic en el botón para mostrar un saludo de bienvenida en Netflix. <strong>Ejemplo:</strong>
+                        '¡Bienvenido a Netflix!'</p>
+                    <button onclick="BienvenidaNetflix()" type="button" class="btn btn-danger">Ver Saludo</button>
+                </div>
+        
+                <!-- Ejercicio 2 -->
+                <div class="mb-4">
+                    <h2>2. Recomendación de Serie</h2>
+                    <p>Este botón ejecuta la función <code>RecomendarSerie</code>, que muestra una serie recomendada. También
+                        puedes personalizar la serie si pasas un parámetro. <strong>Ejemplo sin parámetro:</strong> 'Te
+                        recomendamos ver "Stranger Things".' <strong>Ejemplo con parámetro:</strong> 'Te recomendamos ver "The
+                        Witcher".'</p>
+                    <button onclick="RecomendarSerie()" type="button" class="btn btn-warning">Recomendar una Serie</button>
+                    <button onclick="RecomendarSerie2('Te recomendamos ver: The Witcher')" type="button" class="btn btn-secondary">Recomendar otra
+                        Serie</button>
+                </div>
+        
+                <!-- Ejercicio 3 -->
+                <div class="mb-4">
+                    <h2>3. Mostrar Perfil del Usuario</h2>
+                    <p>Este botón muestra la información del perfil del usuario. <strong>Ejemplo:</strong> 'Perfil de Jane Doe:
+                        Email: jane.doe@example.com'</p>
+                    <button onclick="MostrarPerfil('Jane Doe','jane.doe@example.com')" type="button"
+                        class="btn btn-primary">Mostrar Perfil</button>
+                </div>
+        
+                <!-- Ejercicio 4 -->
+                <div class="mb-4">
+                    <h2>4. Activar Modo Oscuro (Netflix Night Mode)</h2>
+                    <p>Activa el modo oscuro con colores característicos de Netflix. <strong>Ejemplo:</strong> Fondo:
+                        <code>#141414</code>, Texto: <code>#e50914</code>.
+                    </p>
+                    <button onclick="NetflixNightMode('#141414', '#e50914')" type="button" class="btn btn-dark">Activar Modo
+                        Oscuro</button>
+                </div>
+        
+                <!-- Ejercicio 5 -->
+                <div class="mb-4">
+                    <h2>5. Activar Modo Claro (Netflix Day Mode)</h2>
+                    <p>Restaura el modo claro con fondo blanco y texto negro. <strong>Ejemplo:</strong> Fondo:
+                        <code>#ffffff</code>, Texto: <code>#000000</code>.
+                    </p>
+                    <button onclick="NetflixDayMode('#ffffff', '#000000')" type="button" class="btn btn-light">Activar Modo Claro</button>
+                </div>
+        
+                <!-- Ejercicio 6 -->
+                <div class="mb-4">
+                    <h2>6. Calcular Tiempo de Maratón</h2>
+                    <p>Calcula el tiempo total de una maratón de una serie. <strong>Ejemplo:</strong> 3 episodios de 60 minutos
+                        = <code>3 * 60</code> = 180 minutos.</p>
+                    <button onclick="CalcularMaraton(3, 60)" type="button" class="btn btn-success">Calcular Tiempo</button>
+                </div>
+        
+                <!-- Ejercicio 7 -->
+                <div class="mb-4">
+                    <h2>7. Dividir Episodios en Días</h2>
+                    <p>Divide los episodios de una temporada en días para evitar maratones largos. <strong>Ejemplo:</strong> 12
+                        episodios divididos en 4 días = <code>12 / 4</code> = 3 episodios por día.</p>
+                    <button onclick="DividirEpisodios(12,4)" type="button" class="btn btn-info">Dividir Episodios</button>
+                </div>
+        
+                <!-- Ejercicio 8 -->
+                <div class="mb-4">
+                    <h2>8. Crear Perfil de Usuario</h2>
+                    <p>Completa los campos con tu información y haz clic en el botón para crear tu perfil.</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="nombreUsuario">Nombre</label>
+                            <input type="text" id="nombreUsuario" class="form-control" placeholder="Nombre del Usuario">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailUsuario">Correo Electrónico</label>
+                            <input type="email" id="emailUsuario" class="form-control" placeholder="Correo Electrónico">
+                        </div>
+                        <div class="form-group">
+                            <label for="edadUsuario">Edad</label>
+                            <input type="number" id="edadUsuario" class="form-control" placeholder="Edad">
+                        </div>
+                        <button onclick="CrearPerfil()" type="button" class="btn btn-danger">Crear Perfil</button>
+                    </form>
+                </div>
+            </div>
 
         </main>
         <!-- Fin: Main  -->
