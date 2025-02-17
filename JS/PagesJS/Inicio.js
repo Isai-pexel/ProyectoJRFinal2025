@@ -22,7 +22,7 @@ function Mostrar_Testimonios() {
         <p class="h2 mb-2">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta atque explicabo non iste deserunt, ad odit earum debitis id illum laudantium sapiente aperiam saepe nostrum beatae blanditiis. Assumenda, molestiae quod?  
         </p>
-        <p class="h4 lead">- Autor </p>
+        <p class="h4 lead">- Autor  Isai Badilla</p>
     </div>
                 
 
