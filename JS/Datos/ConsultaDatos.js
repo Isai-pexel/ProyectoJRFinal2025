@@ -4,7 +4,6 @@
 //lo -- crea objeto
 //kv -- crea key : value 
 
-
 export let Datos_LiNav = [
 
     {
@@ -18,25 +17,25 @@ export let Datos_LiNav = [
         Nombre: "Calculadora",
         Detalle: "Practica",      
         Url: "./Practica_Calculadora.html",
-        Activo: false
+        Activo: true
     },
     {   Id: 3,
         Nombre: "Listado Clientes", 
         Detalle: "Practica",     
         Url: "./Practica_Listado_Clientes.html",
-        Activo: true
+        Activo: false
     },
     {   Id: 4,
         Nombre: "Tarea Pokemon",   
         Detalle: "Practica",  
         Url: "./Practica_TareaPokemon.html",
-        Activo: false
+        Activo: true
     },
     {   Id: 5,
         Nombre: "Tarea Netflix",    
         Detalle: "Practica", 
         Url: "./Practica_TareaNetflix.html",
-        Activo: false
+        Activo: true
     },
     {   Id: 7,
         Nombre: "API_TareaPokemon",    
@@ -48,7 +47,7 @@ export let Datos_LiNav = [
         Nombre: "API_Listado_Cliente",    
         Detalle: "Proyecto", 
         Url: "./API_Listado_Clientes.html",
-        Activo: true
+        Activo: false
     },
     {   Id: 9,
         Nombre: "API_VerUsuario",    
